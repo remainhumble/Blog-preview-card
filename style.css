@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500..800;1,500..800&display=swap");
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-950);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.5em; /* 24px -> 1.5em */
+}
+
+a {
+  text-decoration: none;
+  color: var(--Gray-950);
+}
+
+a:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a:focus {
+  outline: 2px solid hsl(47, 88%, 63%);
+}
+
+#container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  width: 24em;
+}
+
+#card {
+  background-color: var(--White);
+  border: 1px solid var(--Gray-500);
+  border-radius: 1.25em;
+  padding: 1.25em;
+  width: 23em;
+  max-width: 100%;
+  transform: scale(0.7); /* Shrinks the card and all its children */
+  transform-origin: center; /* Keeps the card centered while scaling */
+  box-shadow: 0.625em 0.625em 0 var(--Gray-950);
+}
+
+#illustration-article {
+  width: 100%;
+  border-radius: 0.625em; /* 10px -> 0.625em */
+}
+
+#card p {
+  color: var(--Gray-500);
+  margin: 12px 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#category {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.3125em; /* 5px -> 0.3125em */
+  display: inline-block;
+  margin-top: 1.25em; /* 20px -> 1.25em */
+  padding: 0.5em 0.75em; /* 8px 12px -> 0.5em 0.75em */
+  font-weight: 800;
+}
+
+#card #date {
+  margin: 16px 0;
+  color: var(--Gray-950);
+}
+
+#author {
+  font-weight: 800;
+  color: var(--Gray-950);
+  display: flex;
+  align-items: center;
+  margin-top: 1.25em;
+  font-weight: 900;
+}
+
+#author img {
+  width: 2.5em; /* 40px -> 2.5em */
+  height: 2.5em; /* 40px -> 2.5em */
+  border-radius: 50%;
+  margin-right: 0.625em; /* 10px -> 0.625em */
+}
